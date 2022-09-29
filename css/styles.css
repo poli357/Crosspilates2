@@ -4,6 +4,33 @@
     padding: 0;
     margin: 0;
 }
+
+header{
+    background-color:#90BABD;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    word-spacing: 50px;
+    font-weight: bolder;
+}
+
+
+ul{
+    list-style-type: none;
+}
+li{
+    list-style-type: none;
+    display: inline;
+}
+a{
+    color:whitesmoke;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
 body{
     background-color:#FCF0E3;
     text-align: center;
@@ -11,359 +38,41 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
-header{
-    background-color:#90BABD;
-    padding: 40px;
-    margin-top: 0;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    word-spacing: 50px;
-}
-.container{
-    display: grid;
 
-    grid-template-columns: repeat(1fr);
-    grid-template-rows: repeat(1fr);
-    grid-template-areas:
-    "textoInformativo textoInformativo textoInformativo"
-    "imagen1 imagen2 imagen3"
-}
-.textoInformativo{
-    grid-area: textoInformativo;
-    background-color: whitesmoke;
-    justify-content: center;
-    padding: 20px;
-    margin-bottom: 0%;
-}
-.imagen1{
-    grid-area: imagen1;
-    height: fit-content;
-    width: fit-content;
-}
-.imagen2{
-    grid-area: imagen2;
-    height: fit-content;
-    width: fit-content;
-}
-.imagen3{
-    grid-area: imagen3;
-    height: fit-content;
-    width: fit-content;
-}
-.banner{
-    position: sticky;
-    justify-items: center;
-    justify-content: space-evenly;
-}
-ul{
-    list-style-type: none;
-}
-li{
-    list-style-type: none;
-    display: inline;
-}
-a{
-    color:whitesmoke;
-    text-decoration: none;
-    font-size: 25px;
-    font-family: 'Poppins', sans-serif;
-}
-h1{
-    padding: 15px;
-    color: #90B1BD;
-    text-align: center;
-    font-size: 75px;
-    margin: auto;
-}
-h2{
-    padding: 15px;
-    color: #90B1BD;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 25px;
-    margin: auto;
-}
-p{
-    padding: 30px;
+.tituloMedio{
     font-family:'Poppins', sans-serif;
-    font-size: 20px;
-    line-height: 25px;
-    color:black
-}
-.pilatesReformer{
-    font-style: italic;
-    color: darkmagenta;
-}
-figure img{
-    display: block;
-    margin: 0px auto;
-    padding: 45px;
-}
-footer{
-    background-color:#90BABD;
-    padding: 40px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: center;
-    position: static;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    left: 0px;
-    bottom: 0px;
-    height: 30px;
-    width: 100%;
-}
-span{
-    color:whitesmoke;
-    text-align: center;
-    text-decoration: none;
-    font-size: 25px;
-    font-family: 'Poppins', sans-serif;
-}
-@media(min-width:500px){
-.body{
-    background-color:#FCF0E3;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-.header{
-    background-color:#90BABD;
-    padding: 40px;
-    margin-top: 0;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    word-spacing: 50px;
-}
-.container{
-    margin: 0%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "textoInformativo textoInformativo"
-    "imagen1"
-    "imagen2"
-    "imagen3"
-}
-.textoInformativo{
-    grid-area: textoInformativo;
-    background-color: whitesmoke;
-    justify-content: center;
-    padding: 20px;
-    margin-bottom: 0%;
-}
-.imagen1{
-    grid-area: imagen1;
-    height: 350px;
-    width: 350px;
-}
-.imagen2{
-    grid-area: imagen2;
-    height: 350px;
-    width: 350px;
-}
-.imagen3{
-    grid-area: imagen3;
-    height: 350px;
-    width: 350px;
-}
-.banner{
-    position: sticky;
-    justify-items: center;
-    justify-content: space-evenly;
-}
-ul{
-    list-style-type: none;
-}
-li{
-    list-style-type: none;
-    display: inline;
-}
-a{
-    color:whitesmoke;
-    text-decoration: none;
-    font-size: 25px;
-    font-family: 'Poppins', sans-serif;
-}
-h1{
-    padding: 15px;
-    color: #90B1BD;
-    text-align: center;
-    font-size: 75px;
-    margin: auto;
-}
-h2{
-    padding: 15px;
-    color: #90B1BD;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 25px;
-    margin: auto;
-}
-p{
-    padding: 30px;
-    font-family:'Poppins', sans-serif;
-    font-size: 20px;
-    line-height: 25px;
-    color:black
-}
-.pilatesReformer{
-    font-style: italic;
-    color: darkmagenta;
-}
-figure img{
-    display: block;
-    margin: 0px auto;
-    padding: 45px;
-}
-footer{
-    background-color:#90BABD;
-    padding: 40px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: center;
-    position: static;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    left: 0px;
-    bottom: 0px;
-    height: 30px;
-    width: 100%;
-}
-span{
-    color:whitesmoke;
-    text-align: center;
-    text-decoration: none;
-    font-size: 25px;
-    font-family: 'Poppins', sans-serif;}
+    font-weight:bold;
+    font-size: xx-large;
+    color: #90BABD;
+    margin-top: 10px;
 }
 
-@media(min-width:500px){
-    .body{
-        background-color:#FCF0E3;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
+.textoInformativo{
+    font-size:larger ;
+}
+
+.imagenes { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 10px;
+    align-items:center;
+    margin-bottom: 20px;
     }
-    .header{
-        background-color:#90BABD;
-        padding: 40px;
-        margin-top: 0;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        justify-content:space-evenly;
-        word-spacing: 50px;
-    }
-    .container{
-        margin: 0%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "textoInformativo textoInformativo"
-        "imagen1"
-        "imagen2"
-        "imagen3"
-    }
-    .textoInformativo{
-        grid-area: textoInformativo;
-        background-color: whitesmoke;
-        justify-content: center;
-        padding: 20px;
-        margin-bottom: 0%;
-    }
-    .imagen1{
-        grid-area: imagen1;
-        height: 350px;
-        width: 350px;
-    }
-    .imagen2{
-        grid-area: imagen2;
-        height: 350px;
-        width: 350px;
-    }
-    .imagen3{
-        grid-area: imagen3;
-        height: 350px;
-        width: 350px;
-    }
-    .banner{
-        position: sticky;
-        justify-items: center;
-        justify-content: space-evenly;
-    }
-    ul{
-        list-style-type: none;
-    }
-    li{
-        list-style-type: none;
-        display: inline;
-    }
-    a{
-        color:whitesmoke;
-        text-decoration: none;
-        font-size: 25px;
-        font-family: 'Poppins', sans-serif;
-    }
-    h1{
-        padding: 15px;
-        color: #90B1BD;
-        text-align: center;
-        font-size: 75px;
-        margin: auto;
-    }
-    h2{
-        padding: 15px;
-        color: #90B1BD;
-        text-align: center;
-        text-decoration: underline;
-        font-size: 25px;
-        margin: auto;
-    }
-    p{
-        padding: 30px;
-        font-family:'Poppins', sans-serif;
-        font-size: 20px;
-        line-height: 25px;
-        color:black
-    }
-    .pilatesReformer{
-        font-style: italic;
-        color: darkmagenta;
-    }
-    figure img{
-        display: block;
-        margin: 0px auto;
-        padding: 45px;
-    }
-    footer{
-        background-color:#90BABD;
-        padding: 40px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        text-align: center;
-        position: static;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        left: 0px;
-        bottom: 0px;
-        height: 30px;
-        width: 100%;
-    }
-    span{
-        color:whitesmoke;
-        text-align: center;
-        text-decoration: none;
-        font-size: 25px;
-        font-family: 'Poppins', sans-serif;
-    }
+
+.imagenes img {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    max-width: 100%;
+}
+
+.footer{
+    background-color:#90BABD;
+    padding: 20px;
+    margin-top: 10;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+
+.footer img {
+    width: 2%;
 }
